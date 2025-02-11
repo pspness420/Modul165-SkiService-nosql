@@ -1,0 +1,33 @@
+.service-img {
+    width: 100%; /* Macht die Bilder responsiv */
+    max-width: 250px; /* Begrenzte maximale Breite */
+    height: auto; /* Höhe passt sich der Breite proportional an */
+    object-fit: cover; /* Bild wird zugeschnitten, um den verfügbaren Platz zu füllen */
+    border-radius: 10px; /* Abgerundete Ecken */
+    border: 2px solid rgba(108, 108, 108, 0.1); /* Leichter, halbtransparenter Rand */
+}
+
+.service-item {
+    display: flex; /* Flexbox für Layout */
+    align-items: center; /* Zentriert die Elemente vertikal */
+    justify-content: space-between; /* Platz zwischen den Elementen */
+    margin-bottom: 30px; /* Abstand zwischen Service-Elementen */
+}
+
+.service-item img {
+    margin-right: 20px; /* Abstand zwischen Bild und Text */
+}
+
+.service-item p {
+    font-size: 1.2rem; /* Größere Schriftgröße für besseren Textlesefluss */
+}
+
+.container h2 {
+    text-align: center; /* Überschrift zentrieren */
+    margin-bottom: 40px; /* Abstand unter der Überschrift */
+}
+
+.service-img:hover {
+    scale: 1.1; /* Vergrößert das Bild leicht beim Hover */
+    box-shadow: 0 0 4px; /* Fügt einen leichten Schatten hinzu */
+}

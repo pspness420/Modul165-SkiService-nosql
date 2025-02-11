@@ -1,0 +1,263 @@
+{
+	"info": {
+		"_postman_id": "e6251939-de95-4a6f-ab74-9fde35ba41e4",
+		"name": "SkiServiceManagement",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39742791"
+	},
+	"item": [
+		{
+			"name": "Get-Alle Benutzer abrufen",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/auth/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post- Benutzer registrieren",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"benutzername\": \"Yannick\",\r\n    \"passwort\": \"Admin1234\",\r\n    \"rolle\": \"Admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post-Benutzer anmelden",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"benutzername\": \"Admin/Yannick\",\r\n    \"passwort\": \"Admin12345\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put{id}-Benutzer aktualisieren",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"benutzername\": \"Test\",\r\n    \"passwort\": \"Test\",\r\n    \"rolle\": \"User\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/auth/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete{id}-Benutzer löschen",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/auth/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get-Alle Skiservices abrufen",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/auftrag",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auftrag"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get{id}-Spezifischen Skiservice abrufen",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/auftrag/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auftrag",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post-Skiservice erstellen",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"kundenName\": \"Yannick Frei\",\r\n  \"email\": \"yannick.frei@student.ipso.ch\",\r\n  \"telefon\": \"078 408 54 70\",\r\n  \"prioritaet\": \"Express\",\r\n  \"dienstleistung\": \"Großer Service\",\r\n  \"status\": \"Offen\"\r\n}\r\n\r\n\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/auftrag",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auftrag"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put{id}-Skiservice aktualisieren",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"kundenName\": \"Yannick Frei\",\r\n    \"email\": \"yannick.frei@student.ipso.ch\",\r\n    \"telefon\": \"078 408 54 70\",\r\n    \"prioritaet\": \"Express\",\r\n    \"dienstleistung\": \"Großer Service, Rennski-Service, Bindung montieren und einstellen\",\r\n    \"createDate\": \"2024-12-10T10:00:00Z\",\r\n    \"pickupDate\": \"2024-12-17T10:00:00Z\",\r\n    \"status\": \"Offen\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/auftrag/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auftrag",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete{id}-Skiservice löschen",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/auftrag/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auftrag",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

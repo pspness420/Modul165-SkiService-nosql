@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Ski-Service</title>
+    <!-- Bootstrap CSS für grundlegendes Styling -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Projekt-spezifische CSS-Dateien -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+
+<!-- Vollbild-Loader wird angezeigt, bis die Seite vollständig geladen ist -->
+<div class="loader"></div>
+
+<!-- Loader-JavaScript -->
+<script src="/js/loader.js"></script>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="index.html">Jetstream-Ski-Service</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <!-- Navigationselemente -->
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Angebot</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Kontakt</a></li>
+            <li class="nav-item"><a class="nav-link" href="registration.html">Login</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main class="container my-5 background">
+    <!-- Hauptinhalt -->
+    <fieldset>
+            <!-- Banner-Bereich -->
+            <section class="jumbotron text-center banner">
+                <h1 class="display-4 text">Willkommen beim Ski-Service!</h1>
+                <p class="lead text">Ihr Partner für einen schnellen und professionellen Skiservice.</p>
+            </section>
+            
+            <!-- Angebot-Bereich -->
+            <section class="container py-5">
+                <h2 class="text-center">Unser Angebot</h2>
+                <p class="text-center">Egal, ob Sie Ihre Ski wachsen, Kanten schärfen oder reparieren lassen möchten – wir bieten alles für Ihre Ausrüstung.</p>
+                <div class="row text-center">
+                    <!-- Angebot: Wachsen -->
+                    <div class="col-md-4">
+                        <img src="https://thebarn.bluemountain.ca/wp-content/uploads/2021/01/bins.jpg"
+                            alt="Wachsen"
+                            class="img-fluid rounded-circle mb-3 offer-image">
+                        <h3>Wachsen</h3>
+                        <p>Optimale Gleitfähigkeit für Ihre Ski.</p>
+                    </div>
+                    <!-- Angebot: Kantenservice -->
+                    <div class="col-md-4">
+                        <img src="https://www.snow-forecast.com/system/images/5963/medium/Uludag.jpg"
+                            alt="Kantenservice"
+                            class="img-fluid rounded-circle mb-3 offer-image">
+                        <h3>Kantenservice</h3>
+                        <p>Perfekte Kontrolle auf der Piste.</p>
+                    </div>
+                    <!-- Angebot: Reparaturen -->
+                    <div class="col-md-4">
+                        <img src="https://www.snowtrex.co.uk/magazine/files/2019/09/shutterstock_1009968253.jpg"
+                            alt="Reparaturen"
+                            class="img-fluid rounded-circle mb-3 offer-image">
+                        <h3>Reparaturen</h3>
+                        <p>Schnelle und zuverlässige Reparaturen.</p>
+                    </div>
+                </div>
+            </section>
+    </fieldset>
+</main>
+
+<!-- Footer -->
+<footer class="bg-primary text-white text-center py-4 mt-auto">
+    <div class="container">
+        <!-- Fußzeilen-Links -->
+        <p>&copy; 2024 Ski-Service. Alle Rechte vorbehalten.</p>
+        <ul class="list-unstyled mb-0">
+            <li><a href="datenschutz.html" class="text-white">Datenschutz</a></li>
+            <li><a href="impressum.html" class="text-white">Impressum</a></li>
+        </ul>
+    </div>
+</footer>
+
+<!-- JavaScript-Bibliotheken -->
+<script src="/js/navigation.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

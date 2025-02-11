@@ -1,0 +1,96 @@
+/* Vollbild-Loader-Container */
+.loader {
+    position: fixed; /* Positioniert den Loader über den gesamten Bildschirm */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Volle Breite des Ansichtsfensters */
+    height: 100vh; /* Volle Höhe des Ansichtsfensters */
+    display: flex; /* Flexbox für zentrierte Inhalte */
+    align-items: center; /* Zentriert den Loader vertikal */
+    justify-content: center; /* Zentriert den Loader horizontal */
+    background: rgba(51, 51, 51, 0.9); /* Dunkler halbtransparenter Hintergrund */
+    z-index: 9999; /* Sicherstellen, dass der Loader im Vordergrund ist */
+    transition: opacity 0.75s, visibility 0.75s; /* Sanftes Ausblenden mit Übergang */
+}
+
+/* Klasse für das Ausblenden des Loaders */
+.loader--hidden {
+    opacity: 0; /* Sichtbarkeit auf transparent setzen */
+    visibility: hidden; /* Loader aus dem sichtbaren Bereich entfernen */
+}
+
+/* Stil für das animierte Lade-Element */
+.loader::after {
+    content: ""; /* Platzhalter für das Pseudo-Element */
+    width: 75px; /* Größe des Lade-Elements */
+    height: 75px;
+    border: 15px solid #dddddd; /* Rand des Lade-Elements */
+    border-top-color: #8a90d2; /* Farbe des oberen Rands für den Rotationseffekt */
+    border-radius: 50%; /* Rundes Lade-Element */
+    animation: loading 0.75s ease infinite; /* Endlose Dreh-Animation */
+}
+
+/* Keyframe-Animation für das Drehen des Loaders */
+@keyframes loading {
+    from {
+        transform: rotate(0turn); /* Startet bei 0 Grad Drehung */
+    }
+    to {
+        transform: rotate(1turn); /* Dreht sich um 360 Grad */
+    }
+}
+
+/* Body-Stil mit Hintergrundbild */
+body {
+    background: url('https://www.atelier2f.de/bildkatalog/bild/fitheight/1500/9826/9826_6059dcb020102391390879.jpg'); /* Pfad zum Hintergrundbild */
+    background-size: cover; /* Bild füllt den gesamten Bereich */
+    background-position: center; /* Zentriert das Hintergrundbild */
+    background-repeat: no-repeat; /* Bild wiederholt sich nicht */
+    background-attachment: fixed; /* Hintergrund bleibt beim Scrollen fixiert */
+    margin: 0; /* Entfernt Standardabstände */
+    display: flex; /* Flexbox für Layout */
+    flex-direction: column; /* Flex-Elemente werden untereinander gestapelt */
+    min-height: 100vh; /* Mindesthöhe auf die volle Fensterhöhe setzen */
+}
+
+/* Hintergrund-Stil für Inhalte */
+.background {
+    background-color: rgba(255, 255, 255, 0.85); /* Weißer halbtransparenter Hintergrund */
+    border: 2px solid rgba(108, 108, 108, 0.1); /* Leichter grauer Rand */
+    border-radius: 10px; /* Abgerundete Ecken */
+    padding: 20px; /* Innenabstand */
+    box-shadow: 0 0 3px; /* Leichter Schatteneffekt */
+    min-height: 200px; /* Mindesthöhe für den Container */
+    max-width: 1260px; /* Maximale Breite */
+    height: auto; /* Automatische Höhenanpassung */
+    margin: 20px auto 0; /* Zentriert den Container */
+    margin-bottom: 20px; /* Abstand zum unteren Rand */
+    width: 90%; /* Breite relativ zum Ansichtsfenster */
+}
+
+.hidden {
+    display: none;
+}
+
+/* Hover-Effekt für Navigationslinks */
+.navbar .nav-link:hover {
+    background-color: #ffffff; /* Weißer Hintergrund beim Hover */
+    border-radius: 5px; /* Leicht abgerundete Ecken */
+    color: black !important; /* Textfarbe wird schwarz */
+}
+
+/* Für Geräte mit einer maximalen Breite von 480px */
+@media screen and (max-width: 480px) {
+    .background {
+        width: 95%; /* Setzt die Breite des Elements auf 95% des Ansichtsfensters */
+    }
+}
+
+/* Für Geräte mit einer maximalen Breite von 460px */
+@media screen and (max-width: 460px) {
+    .background {
+        width: 100%; /* Setzt die Breite des Elements auf 100% des Ansichtsfensters */
+    }
+}
+
+
