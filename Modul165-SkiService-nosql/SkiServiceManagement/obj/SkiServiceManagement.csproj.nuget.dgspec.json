@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Tunahan\\Downloads\\Modul165-SkiService-nosql\\Modul165-SkiService-nosql\\SkiServiceManagement\\SkiServiceManagement.csproj": {}
+    "C:\\Users\\Tunahan\\Documents\\GitHub\\Modul165-SkiService-nosql\\Modul165-SkiService-nosql\\SkiServiceManagement\\SkiServiceManagement.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Tunahan\\Downloads\\Modul165-SkiService-nosql\\Modul165-SkiService-nosql\\SkiServiceManagement\\SkiServiceManagement.csproj": {
+    "C:\\Users\\Tunahan\\Documents\\GitHub\\Modul165-SkiService-nosql\\Modul165-SkiService-nosql\\SkiServiceManagement\\SkiServiceManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tunahan\\Downloads\\Modul165-SkiService-nosql\\Modul165-SkiService-nosql\\SkiServiceManagement\\SkiServiceManagement.csproj",
+        "projectUniqueName": "C:\\Users\\Tunahan\\Documents\\GitHub\\Modul165-SkiService-nosql\\Modul165-SkiService-nosql\\SkiServiceManagement\\SkiServiceManagement.csproj",
         "projectName": "SkiServiceManagement",
-        "projectPath": "C:\\Users\\Tunahan\\Downloads\\Modul165-SkiService-nosql\\Modul165-SkiService-nosql\\SkiServiceManagement\\SkiServiceManagement.csproj",
+        "projectPath": "C:\\Users\\Tunahan\\Documents\\GitHub\\Modul165-SkiService-nosql\\Modul165-SkiService-nosql\\SkiServiceManagement\\SkiServiceManagement.csproj",
         "packagesPath": "C:\\Users\\Tunahan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tunahan\\Downloads\\Modul165-SkiService-nosql\\Modul165-SkiService-nosql\\SkiServiceManagement\\obj\\",
+        "outputPath": "C:\\Users\\Tunahan\\Documents\\GitHub\\Modul165-SkiService-nosql\\Modul165-SkiService-nosql\\SkiServiceManagement\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

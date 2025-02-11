@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fRgjxxbi8+k=",
+  "dgSpecHash": "edHmORidcNE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Tunahan\\Downloads\\Modul165-SkiService-nosql\\Modul165-SkiService-nosql\\SkiServiceManagement\\SkiServiceManagement.csproj",
+  "projectFilePath": "C:\\Users\\Tunahan\\Documents\\GitHub\\Modul165-SkiService-nosql\\Modul165-SkiService-nosql\\SkiServiceManagement\\SkiServiceManagement.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Tunahan\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Tunahan\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
